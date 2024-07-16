@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Glass+Antiqua&family=Jersey+15&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="countContainer" id="Content">
+        <h2>Count!</h2>
+        <label for="countLabel" id="countLabel">0</label>
+        <div class="containerButton">
+            <button id="decreaseButton">decrease</button>
+            <button id="increaseButton">increase</button>
+            <button id="resetButton">reset</button>
+        </div>
+    </div>
+    <div class="temperature" id="Content">
+        <h2>Temperature Conversion</h2>
+        <div class="tempCont">
+            <div class="tempFrom">
+                <input type="number" id="tempNum" value="0">
+                <select name="tFrom" id="tFrom">
+                    <option value="celcius">Celcius</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+            </div>
+            <div class="tempEq">
+                <span>=</span>
+            </div>
+            <div class="tempTo">
+                <div id="tAnswer">0</div>
+                <select name="tTo" id="tTo">
+                    <option value="celcius">Celcius</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+            </div>
+        </div>
+        <button type="button" onclick="convert()">Convert</button>
+        <p>Function :</p>
+        <p id="rumus"></p>
+
+    </div>
+
+    <div id="diceCon" class="Content">
+        <h2>Dice Roll</h2>
+        <label for="">Num of Dice (1-6) :</label>
+        <input type="number" id="numOfDice" value="1" min="1" max="6" maxlength="1">
+        <button onclick="rollDice()">Roll</button>
+        <p id="diceError"></p>
+        <div id="diceResult">
+
+        </div>
+        <div id="diceImg">
+
+        </div>
+    </div>
+    <div id="clockContainer">
+        <h2 id="titleClock">Clock</h2>
+        <div id="clock">
+            00:00:00
+        </div>
+    </div>
+
+    <div id="stopwatchContainer" class="Content">
+        <h2 id="stopwatchTitle">Stopwatch</h2>
+        <div id="display">
+            00:00:00:00</div>
+        <div id="controls">
+            <button id="startSW" onclick="start()">START</button>
+            <button id="pauseSw" onclick="pause()">PAUSE</button>
+            <button id="resetSW" onclick="reset()">RESET</button>
+        </div>
+    </div>
+    <div id="calculatorContainer">
+        <input id="calculator" type="text" readonly>
+        <div id="keys">
+            <button onclick="appendtoDisplay('+')" class="operatorBtn">+</button>
+            <button onclick="appendtoDisplay('7')">7</button>
+            <button onclick="appendtoDisplay('8')">8</button>
+            <button onclick="appendtoDisplay('9')">9</button>
+            <button onclick="appendtoDisplay('-')" class="operatorBtn">-</button>
+            <button onclick="appendtoDisplay('4')">4</button>
+            <button onclick="appendtoDisplay('5')">5</button>
+            <button onclick="appendtoDisplay('6')">6</button>
+            <button onclick="appendtoDisplay('*')" class="operatorBtn">*</button>
+            <button onclick="appendtoDisplay('1')">1</button>
+            <button onclick="appendtoDisplay('2')">2</button>
+            <button onclick="appendtoDisplay('3')">3</button>
+            <button onclick="appendtoDisplay('/')" class="operatorBtn">/</button>
+            <button onclick="appendtoDisplay('0')">0</button>
+            <button onclick="appendtoDisplay('.')">.</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="clearDisplay()" class="operatorBtn">C</button>
+        </div>
+    </div>
+    <div class="suitContainer" id="Content">
+        <h2 id="suitTitle">SUU...IT!</h2>
+        <button onclick="suit('kertas')">✋</button>
+        <button onclick="suit('gunting')">✌</button>
+        <button onclick="suit('batu')">👊</button>
+
+        <p id="suitPlayer">Player:</p>
+        <p id="suitComp">Computer:</p>
+        <div id="suitResult"></div>
+        <span id="playerScore">0</span>
+        <span>-</span>
+        <span id="cpuScore">0</span>
+    </div>
+    <div class="pokemonContainer" id="Content">
+        <h2 id="pokemonTitle">Find Your Pokemon!</h2>
+        <input type="text" id="pokemonName" placeholder="Enter a Pokemon Name" onkeydown="clickPress(event)">
+        <button onclick="fetchData()">Find</button><br>
+        <img src="" alt="Pokemon Image" id="pokemonImage" style="display:none">
+    </div>
+    <div class="weatherContainer" id="Content">
+        <h2 id="pokemonTitle">Weather</h2>
+        <form action="" class="weatherForm">
+            <input type="text" class="cityInput" placeholder="Enter a City">
+            <button type="submit">Get Weather</button>
+        </form>
+        <div class="weatherCard" style="display:none">
+
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
