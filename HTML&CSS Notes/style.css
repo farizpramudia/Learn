@@ -1,0 +1,400 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 50px 500px;
+  background-color: #222831;
+  font-family: "Ubuntu", "Sans Serif", "Verdana";
+  color: aliceblue;
+}
+
+#container {
+  margin: auto;
+  width: 240px;
+  height: 55px;
+  position: relative;
+  top: 25px;
+  border: 2px solid;
+  border-radius: 15px;
+}
+#weblogo {
+  width: 50px;
+  position: absolute;
+  left: 0;
+}
+#webtitle {
+  font-family: Comfortaa;
+  font-weight: bold;
+  position: absolute;
+  left: 55px;
+  top: -10px;
+}
+.naviheader {
+  margin-top: 60px;
+}
+a.navi {
+  display: inline-block;
+  background-color: #31363f;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-family: "Ubuntu", "Verdana", "Arial";
+  text-decoration: none;
+  text-decoration-line: none;
+  letter-spacing: 1px;
+  font-weight: 1.5em;
+  color: aliceblue;
+}
+
+a:hover {
+  background-color: #76abae;
+}
+
+#linebreak {
+  margin-top: -30px;
+}
+
+header {
+  background-color: #222831;
+  position: sticky;
+  top: 0;
+}
+
+.row {
+  margin-bottom: -100px;
+}
+.column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+}
+.card {
+  height: 950px;
+  width: 40vh;
+  margin: 0;
+}
+#card1 {
+  margin-right: 50px;
+}
+
+div#text {
+  font-family: "Ubuntu", "Sans Serif", "Verdana";
+  color: aliceblue;
+}
+
+.subtitle {
+  text-decoration-line: underline;
+  letter-spacing: 2px;
+  font-family: "Ubuntu Mono", "Sans Serif";
+  font-size: 21px;
+  font-weight: bolder;
+  margin-bottom: -40px;
+  margin-left: -20px;
+}
+
+section#divspan {
+  color: white;
+}
+
+h1#title {
+  margin: 30px;
+}
+
+p.mainnav {
+  margin: 50px;
+}
+
+label {
+  width: 250px;
+  clear: left;
+  text-align: left;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+input,
+label,
+select {
+  float: left;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  margin: 8px 0px;
+}
+
+select {
+  margin-right: 7px;
+  width: 60px;
+}
+
+select#subscription {
+  width: 110px;
+}
+
+#content {
+  margin: 0px 25px;
+}
+
+.tables,
+.button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+th,
+td {
+  font-family: Arial, "Ubuntu", sans-serif;
+  font-size: 17px;
+  height: 30px;
+  width: 140px;
+  color: aliceblue;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+fieldset {
+  padding: 50px;
+}
+
+.toptitle {
+  justify-content: center;
+}
+
+.navi {
+  margin: 0 25px;
+  margin-bottom: 0px;
+}
+.overflow h3 {
+  font-weight: light;
+}
+.overflow p {
+  margin-top: 0px;
+  font-weight: lighter;
+  font-family: "ubuntu", sans-serif;
+  font-size: 20px;
+  padding: 2px;
+  text-align: justify;
+  line-height: 1.5;
+}
+#ovisible {
+  border: 2px solid;
+  border-color: white;
+  height: 70px;
+  overflow: visible;
+  margin-bottom: 70px;
+}
+#ohidden {
+  border: 2px solid;
+  border-color: white;
+  height: 70px;
+  overflow: hidden;
+  margin-bottom: 70px;
+}
+#oclip {
+  border: 2px solid;
+  border-color: white;
+  height: 70px;
+  overflow: clip;
+  overflow-clip-margin: 13px;
+  margin-bottom: 70px;
+}
+#oscroll {
+  border: 2px solid;
+  border-color: white;
+  height: 75px;
+  overflow: scroll;
+  margin-bottom: 70px;
+}
+#oauto {
+  border: 2px solid;
+  border-color: white;
+  height: 65px;
+  overflow: auto;
+  margin-bottom: 70px;
+}
+
+.overflow h3 {
+  letter-spacing: 2px;
+}
+
+.display #box1 {
+  height: 100px;
+  width: 100px;
+  background-color: #31363f;
+  display: block;
+  font-size: 20px;
+  text-align: center;
+}
+.display #box2 {
+  height: 100px;
+  width: 100px;
+  background-color: #53797b;
+  display: inline;
+  font-size: 25px;
+  text-align: center;
+}
+.display #box3 {
+  height: 100px;
+  width: 100px;
+  background-color: #53797b;
+  display: inline-block;
+  font-size: 25px;
+  text-align: center;
+}
+
+.display {
+  font-weight: lighter;
+  font-family: "ubuntu", sans-serif;
+  font-size: 20px;
+  padding: 0px;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+.pclasses li {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+}
+
+#bigbox {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+div#left {
+  padding: 15px;
+  padding-right: 40px;
+  margin-right: 20px;
+  width: 300px;
+  border: 2px solid;
+}
+div#right {
+  padding: 15px;
+  padding-right: 40px;
+  margin-left: 20px;
+  width: 300px;
+  border: 2px solid;
+}
+
+#bigbox li {
+  line-height: 2.5;
+  width: 190px;
+}
+
+div#left li:hover {
+  background-color: #76abae;
+}
+
+div#left li:not(:hover) {
+  background-color: #31363f;
+}
+
+div#right li:nth-child(even) {
+  background-color: #76abae;
+}
+
+.line-break {
+  width: 100%;
+}
+#hover {
+  margin-top: 50px;
+  display: block;
+  font-family: Comfortaa, Arial, Sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+}
+#hover p {
+  background-color: tomato;
+  visibility: hidden;
+  margin: 15px;
+  padding: 10px;
+}
+#hover:hover p {
+  visibility: visible;
+}
+
+.pelements {
+  font-family: "Ubuntu", sans-serif, Arial;
+  line-height: 1.6;
+  font-size: 20px;
+}
+
+.pelements h1 {
+  margin-top: -20px;
+}
+
+.pelements h1::first-letter {
+  font-size: 2em;
+  font-style: italic;
+}
+
+.pelements p::first-line {
+  background-color: #31363f;
+}
+
+.pelements p::selection {
+  background-color: #53797b;
+  color: hsl(60, 100%, 80%);
+}
+
+li::before {
+  content: "☑";
+}
+li#apple::after {
+  content: "🍎";
+}
+li#orange::after {
+  content: "🍊";
+}
+li#banana::after {
+  content: "🍌";
+}
+
+.dropdown {
+  display: inline-block;
+}
+.dropdown button {
+  background-color: #76abae;
+  color: whitesmoke;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: Ubuntu;
+  font-weight: bold;
+}
+.dropdown a {
+  display: block;
+  color: whitesmoke;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+.dropdown .dropcontent {
+  display: none;
+  position: absolute;
+  background-color: #31363f;
+  min-width: 100px;
+  font-family: Ubuntu;
+  font-weight: bold;
+}
+.dropdown:hover .dropcontent {
+  display: block;
+}
+.dropdown:hover button {
+  background-color: #53797b;
+}
+.dropdown a:hover {
+  background-color: #53797b;
+}
+.dropdown ~ p {
+  font-family: Ubuntu, Arial, Sans-Serif;
+  font-size: 18px;
+  line-height: 1.4;
+}

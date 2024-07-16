@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="">
+    <link rel="icon" type="image/jpg" href="https://cdn-icons-png.flaticon.com/512/4954/4954362.png">
+    <title>Notes Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="container">
+            <img id="weblogo" src="https://cdn-icons-png.flaticon.com/512/2808/2808293.png" alt="websiteLogo">
+            <h1 id="webtitle">Web Notes</h1>
+        </div>
+        <nav>
+            <div class="naviheader">
+                <p class="mainnav" style="text-align:center;">
+                    <a href="#texts" class="navi">Text</a>
+                    <a href="#lists" class="navi">Lists</a>
+                    <a href="#spandiv" class="navi">Span & Div</a>
+                    <a href="#tables" class="navi">Tables</a>
+                    <a href="#buttons" class="navi">Buttons</a>
+                    <a href="#forms" class="navi">Forms</a>
+                </p>
+            </div>
+        </nav>
+        <hr id="linebreak">
+    </header>
+    <main>
+        <div class="row">
+            <div class="column">
+                <div class="card" id="card1">
+                    <!--Text Attributes-->
+                    <div id="texts">
+                        <fieldset style="padding-left:50px;">
+                            <legend class="subtitle">
+                                <h2>1.Text Attributes</h2>
+                            </legend>
+                            <p>This is normal text</p>
+                            <p>This is <b>bold</b> text</p>
+                            <p>This is <i>italic</i> text</p>
+                            <p>This is <u>underlined</u> text</p>
+                            <p>This is <del>deleted</del> text</p>
+                            <p>This is <big>big</big> text</p>
+                            <p>This is <small>small</small> text</p>
+                            <p>This is <sub>subscript</sub> text</p>
+                            <p>This is <sup>superscript</sup> text</p>
+                            <p>This is <tt>monospaced</tt> text</p>
+                            <p>This is <mark>highlighted</mark> text</p>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="card">
+                    <!--Lists-->
+                    <div id="lists">
+                        <fieldset style="padding-left:50px;">
+                            <legend class="subtitle">
+                                <h2>2.Lists</h2>
+                            </legend>
+                            <h3>Unordered List</h3>
+                            <ul>
+                                <li>milk</li>
+                                <li>eggs</li>
+                                <li>coffee supplies</li>
+                                <ul>
+                                    <li>coffe beans</li>
+                                    <li>creamer</li>
+                                    <li>sugar</li>
+                                </ul>
+                            </ul>
+                            <h3>Ordered List</h3>
+                            <ol>
+                                <li>Eat breakfast.</li>
+                                <li>Go to class.</li>
+                                <li>Walk the dog.</li>
+                                <li>Go workout.</li>
+                            </ol>
+                            <h3>Description List</h3>
+                            <dl style="margin-left:25px ;">
+                                <!--Description Term-->
+                                <dt>Dragon</dt>
+                                <!--Description Definition-->
+                                <dd>A dragon is a magical legendary creature that appears in the folklore of multiple
+                                    cultures
+                                    worldwide.
+                                </dd>
+                                <dt>Phoenix</dt>
+                                <dd>The phoenix is an immortal bird that cyclically regenerates or is otherwise born
+                                    again.
+                                </dd>
+                                <dt>Vampire</dt>
+                                <dd>A vampire is a mythical creature that subsists by feeding on the vital essence
+                                    (generally in the
+                                    form of
+                                    blood) of the living.</dd>
+                            </dl>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Span and Div-->
+        <div class="divspan" id="content">
+            <fieldset style="padding:50px;">
+                <legend class="subtitle">
+                    <h2>3.Div & Span</h2>
+                </legend>
+                <h2><span style="background-color:#424769;">This is a span title. It's inline.</span></h2>
+                <h2>
+                    <div style="background-color:#7077A1;">This is a div title. It's a block.</div>
+                </h2>
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <span
+                        style="background-color:#424769;">Minus
+                        consequuntur aliquid voluptatem vero dolores
+                        laborum corporis reiciendis, dolore, optio, vel cupiditate quia? Inventore, incidunt sunt
+                        deleniti
+                        tenetur
+                        aut
+                        quasi non!</span></p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                <div style="background-color:#7077A1;">Minus consequuntur
+                    aliquid voluptatem vero dolores
+                    laborum corporis reiciendis, dolore, optio, vel cupiditate quia? Inventore, incidunt sunt deleniti
+                    tenetur
+                    aut
+                    quasi non</div>
+                </p>
+            </fieldset>
+        </div>
+
+        <!--Tables-->
+        <div id="content">
+            <fieldset style="padding: 30px 50px 50px;">
+                <legend class="subtitle">
+                    <h2>4.Tables</h2>
+                </legend>
+                <div class="tables">
+                    <h2 style="margin-bottom: 30px;">Store Hours</h2>
+                    <table border="1" style="background-color:black; color: black;">
+                        <tr align="center" style="background-color:#424769;">
+                            <!--Table Header-->
+                            <th width="100">Sunday</th>
+                            <th width="100">Monday</th>
+                            <th width="100">Tuesday</th>
+                            <th width="100">Wednesday</th>
+                            <th width="100">Thursday</th>
+                            <th width="100">Friday</th>
+                            <th width="100">Saturday</th>
+                        </tr>
+                        <tr align="center" style="background-color:#7077A1;">
+                            <!--Table Data-->
+                            <td>Closed</td>
+                            <td>9-5</td>
+                            <td>9-5</td>
+                            <td>9-5</td>
+                            <td>9-5</td>
+                            <td>9-5</td>
+                            <td>10-2</td>
+                        </tr>
+                    </table>
+                </div>
+            </fieldset>
+        </div>
+
+        <!--Button-->
+        <div id="content">
+            <fieldset style="padding: 20px 50px 50px;">
+                <legend id="buttons" class="subtitle">
+                    <h2>5.Button</h2>
+                </legend>
+                <div class="button">
+                    <h2 id="test">
+                        Press a Button!
+                    </h2>
+                </div>
+                <div class="buttons">
+                    <button onclick="redButton()"
+                        style="height:50px;width:100px;font-size:25px; background-color: red; color:white; border-radius: 10px; margin: 0 7px;">PUSH</button>
+                    <button onclick="blueButton()"
+                        style="height:50px;width:100px;font-size:25px; background-color: blue; color:white; border-radius: 10px; margin: 0 7px">PUSH</button>
+                </div>
+                <script>
+                    function redButton() {
+                        document.getElementById("test").innerHTML = "You pushed the red button."
+                    }
+                </script>
+                <script>
+                    function blueButton() {
+                        document.getElementById("test").innerHTML = "You pushed the blue button."
+                    }
+                </script>
+            </fieldset>
+        </div>
+
+        <!--Form-->
+        <div id="content">
+            <fieldset style="padding: 40px 50px 50px;">
+                <legend id="forms" class="subtitle">
+                    <h2>6.Form</h2>
+                </legend>
+                <h3 style="margin-bottom:30px;font-size: 23px;">Register Here!</h3>
+                <form action="index.php" method="POST">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" minlength="6" maxlength="15" style="width:300px;"><br><br>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" style="width:300px;"><br><br>
+
+                    <label for="
+                email">Email:</label>
+                    <input type="email" id="email" placeholder="yourname@gmail.com" style="width:300px;"><br><br>
+
+                    <label for="phone">Phone:</label>
+                    <select name="region" id="region">
+                        <option value="+00">+00</option>
+                        <option value="+55">+55</option>
+                        <option value="+62">+62</option>
+                    </select>
+                    <input type="tel" id="phone" style="width:233px;""><br><br>
+
+                <label for=" bday">Birthdate:</label>
+                    <input type="date" id="bday">
+
+                    <label for=" age">Age:</label>
+                    <input type="number" id="age" min="0" max="99" style="width:50px;"><br><br>
+
+                    <label for="subscription">Subscription:</label>
+                    <select name="subscription" id="subscription">
+                        <option value="premium">Premium</option>
+                        <option value="family">Family</option>
+                        <option value="free">Free</option>
+                    </select><br><br>
+
+                    <label for="news">News Letters?</label>
+                    <input type="checkbox" id="news"><br><br>
+
+                    <label for="picture">Upload your Picture:</label><br><br>
+                    <input type="file" id="picture" accept="image/png, image/jpeg"><br><br>
+                    <br>
+                    <input type="submit" style="float:right; margin-right: 20px;">
+                </form>
+            </fieldset>
+        </div>
+        <div class="overflow" id="content">
+            <fieldset>
+                <legend id="overflows" class="subtitle">
+                    <h2>7.Overflow</h2>
+                </legend>
+                <h3>Visible</h3>
+                <div id="ovisible">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, expedita enim. Libero pariatur
+                        sint
+                        aliquid nemo nesciunt unde impedit delectus ipsam dolor, facilis veritatis iusto sit ullam
+                        laborum
+                        nobis
+                        magni.</p>
+                </div>
+                <h3>Hidden</h3>
+                <div id="ohidden">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, expedita enim. Libero pariatur
+                        sint
+                        aliquid nemo nesciunt unde impedit delectus ipsam dolor, facilis veritatis iusto sit ullam
+                        laborum
+                        nobis
+                        magni.</p>
+                </div>
+                <h3>Clip</h3>
+                <div id="oclip">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, expedita enim. Libero pariatur
+                        sint
+                        aliquid nemo nesciunt unde impedit delectus ipsam dolor, facilis veritatis iusto sit ullam
+                        laborum
+                        nobis
+                        magni.</p>
+                </div>
+                <h3>Scroll</h3>
+                <div id="oscroll">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, expedita enim. Libero pariatur
+                        sint
+                        aliquid nemo nesciunt unde impedit delectus ipsam dolor, facilis veritatis iusto sit ullam
+                        laborum
+                        nobis
+                        magni.</p>
+                </div>
+                <h3>Auto</h3>
+                <div id="oauto">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, expedita enim. Libero pariatur
+                        sint
+                        aliquid nemo nesciunt unde impedit delectus ipsam dolor, facilis veritatis iusto sit ullam
+                        laborum
+                        nobis
+                        magni.</p>
+                </div>
+            </fieldset>
+
+        </div>
+
+        <div class="display" id="content">
+            <fieldset>
+                <legend id="displays" class="subtitle">
+                    <h2>8.Display</h2>
+                </legend>
+                <div id="box1" style="margin-top:10px;">
+                    BLOCK
+                </div>
+                <div id="box2">
+                    INLINE
+                </div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum perferendis iste animi voluptas maiores
+                repellat alias itaque sunt voluptatum ducimus omnis architecto vero et consectetur iusto eius, in
+                ratione labore!
+                <div id="box3">
+                    INLINE-BLOCK
+                </div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum est provident ex quod neque, beatae
+                natus
+                libero dolorem nemo nihil maxime illum rerum laboriosam incidunt unde soluta alias, reiciendis eligendi.
+            </fieldset>
+        </div>
+
+        <div class="pclasses" id="content">
+            <fieldset>
+                <legend id="pclasses" class="subtitle">
+                    <h2>9.Pseudo-Classes</h2>
+                </legend>
+                <div id="bigbox">
+                    <div id="left">
+                        <ul>
+                            <li>This is number #1</li>
+                            <li>This is number #2</li>
+                            <li>This is number #3</li>
+                            <li>This is number #4</li>
+                            <li>This is number #5</li>
+                            <li>This is number #6</li>
+                            <li>This is number #7</li>
+                            <li>This is number #8</li>
+                            <li>This is number #9</li>
+                        </ul>
+                    </div>
+                    <div id="right">
+                        <ul>
+                            <li>This is number #1</li>
+                            <li>This is number #2</li>
+                            <li>This is number #3</li>
+                            <li>This is number #4</li>
+                            <li>This is number #5</li>
+                            <li>This is number #6</li>
+                            <li>This is number #7</li>
+                            <li>This is number #8</li>
+                            <li>This is number #9</li>
+                        </ul>
+                    </div>
+
+                    <div class="line-break"></div>
+                    <div id="hover">HOVER
+                        <p>BOOM</p>
+                    </div>
+
+                    <div class="line-break"></div>
+                </div>
+            </fieldset>
+        </div>
+
+        <div class="pelements" id="content">
+            <fieldset>
+                <legend id="pelements" class="subtitle">
+                    <h2>10.Pseudo-Elements</h2>
+                </legend>
+                <h1>Hello</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolorum nobis maxime ducimus
+                    perferendis voluptatem qui expedita cupiditate doloribus odio veniam molestias illo praesentium
+                    eaque
+                    accusantium, sunt beatae eveniet blanditiis.</p>
+                <ul id="fruit">
+                    <li id="apple">apple</li>
+                    <li id="orange">orange</li>
+                    <li id="banana">banana</li>
+                </ul>
+            </fieldset>
+        </div>
+
+        <div class="ddown" id="content">
+            <fieldset>
+                <legend id="ddown" class="subtitle">
+                    <h2>11.DropdownElements</h2>
+                </legend>
+                <div class="dropdown">
+                    <button>&#9776;</button>
+                    <div class="dropcontent">
+                        <a href="">Dropdown 1</a>
+                        <a href="">Dropdown 2</a>
+                        <a href="">Dropdown 3</a>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem vitae laborum, iure dolore
+                    nemo
+                    ea neque eius! Porro, velit error cum, sit et corporis saepe neque architecto tempora vel eaque!</p>
+            </fieldset>
+        </div>
+    </main>
+</body>
+
+</html>
